@@ -11,4 +11,10 @@ public class HelloWildFlyController {
     public String sayHello(){
         return ("Hello, SpringBoot on Wildfly");
     }
+
+    @RequestMapping("killSwitch")
+    public void killSwitch()
+    {
+        System.exit(0);
+    }
 }
